@@ -52,3 +52,9 @@ body{
     margin-left:16px;
     width:256px;
 }
+#resultimg{
+    width:512px;
+    height:512px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+}
