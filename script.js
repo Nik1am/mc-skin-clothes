@@ -102,7 +102,7 @@ let ctrl = document.getElementById("controls")
                ri.style.height = '512px'
                ri.style.image.rendering = '-webkit-optimize-contrast'
                ri.style.image.rendering = '-moz-crisp-edges'
-               ri.style.image.rendering = 'pixelated'
+               ri.style.image.rendering = 'crisp-edges'
             };
       };
    };
