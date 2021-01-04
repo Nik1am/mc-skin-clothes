@@ -1,0 +1,55 @@
+body{
+    background-color:#7f7f7f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#controls{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 480px;
+    background-color: #FFF;
+}
+#canvas{
+    background-image: url(https://i.pinimg.com/originals/01/99/07/019907faa020a60609d6bc7b94161727.jpg);
+    border-style: solid; 
+    border-color: black; 
+    border-width: 3px;
+    background-color:#FFF;
+
+    filter: none; 
+    -webkit-filter: blur(0); 
+    -moz-filter: blur(0); 
+    -ms-filter: blur(0);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+}
+#body_choose{
+    display: none;
+}
+
+#hat_choose{
+    display: none;
+}
+
+#legs_choose{
+    display: none;
+}
+
+#shoes_choose{
+    display: none;
+}
+
+#fa_choose{
+    display: none;
+}
+#face_row{
+    position:absolute;
+    rotate: 90deg;
+    width:256px;
+    right:336px;
+    top:272px;
+}
+#face_col{
+    position:absolute;
+    margin-left:16px;
+    width:256px;
+}

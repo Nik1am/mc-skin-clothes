@@ -1,0 +1,70 @@
+<head>
+    <title>MC Skin generator</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/85/78/bf/8578bfd439ef6ee41e103ae82b561986.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+<body><canvas id="canvas" width="64" height="64">
+
+</canvas>
+
+<img id="preview_image">
+
+
+
+<div id="controls" oninput="drawSkin()">
+    <p>Controls opacity <input type="range" id="opacity" min="10" max="100" value="100"></p>
+
+    <p>Skin tone: <input type="checkbox" id="st_checkbox"><select id="st_choose">
+        <option value="none.png">(nothing)</option>
+        <option value="st/1.png">Skin tone 1</option>
+        <option value="st/2.png">Skin tone 2</option>
+    </select></p>
+
+    <p>Face:<input type="checkbox" id="face_checkbox" checked><select id="face_choose">
+        <option value="faces.png">Faces</option>
+        <option value="none.png">(nothing)</option>
+    </select>
+        <div>
+            <p><input type="range" id="face_col" min="0" max="56" value="0" step="8" ></p>
+            <p></p><input type="range" id="face_row" min="0" max="56" value="0" step="8"></p>
+            <img src="faces_table.png" id="ft">
+        <div>
+    </p>
+
+    <p>Hat<input type="checkbox" id="hat_checkbox"> Type: <select id="hat_choose">
+        <option value="none.png">(nothing)</option>
+        <option value="hat/NY_hat.png">New Year hat</option>
+        <option value="hat/arab_hat.png">Arab hat</option>
+    </select></p>
+    
+    <p>Face accessories<input type="checkbox" id="fa_checkbox"> Type: <select id="fa_choose">
+        <option value="none.png">(nothing)</option>
+        <option value="fa/anonimus_mask.png">Anonymous mask</option>
+        <option value="fa/scarf_1.png">Scarf 1</option>
+        <option value="fa/sunglasses_1.png">Sunglasses 1</option>
+    </select></p>
+    
+    <p>Body<input type="checkbox" id="Body_checkbox"> Type:<select id="body_choose">
+        <option value="none.png">(nothing)</option>
+        <option value="body/sweater_1.png">Sweater</option>
+        <option value="body/blue_hoodie.png">Hoodie(blue)</option>
+        <option value="body/pink_hoodie.png">Hoodie(pink)</option>
+        <option value="body/red_adidas_suit_top.png">Red Adidas suit</option>
+      </select></p>
+    
+    <p>Legs<input type="checkbox" id="legs_checkbox"> Type: <select id="legs_choose">
+        <option value="none.png">(nothing)</option>
+        <option value="legs/red_adidas_suit_bottom.png">Red Adidas suit</option>
+    </select></p>
+    
+    <p>Shoes<input type="checkbox" id="shoes_checkbox"> Type: <select id="shoes_choose">
+        <option value="none.png">(nothing)</option>
+        <option value="shoes/gray_shoes.png">Grey shoes</option>
+    </select></p>
+    
+    <p>Convert to image<input type="checkbox" id="download" value="Download"></p>
+    
+    <p>If something don't work just drag this: <input type="range" value="Update preview" id="update"></p>
+</div>
+<script src="script.js"></script>
+</body>
