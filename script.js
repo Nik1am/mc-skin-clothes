@@ -98,6 +98,10 @@ let ctrl = document.getElementById("controls")
                document.write('<img src="'+result_img+'" id="resultimg"/>')
                var ri = document.getElementById('resultimg')
                ri.style.border = 'solid'
+               ri.style.width = '512px'
+               ri.style.height = '512px'
+               ri.style.image.rendering = '-webkit-optimize-contrast'
+               ri.style.image.rendering = '-moz-crisp-edges'
             };
       };
    };
