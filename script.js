@@ -2,13 +2,7 @@ let ctrl = document.getElementById("controls")
      window.onload = function() {
       var drawingCanvas = document.getElementById('canvas');
 
-      let download = document.getElementById("download") 
-      if(download.checked){
-         var result_img = drawingCanvas.toDataURL("image/png")
-         document.write('<img src="'+result_img+'" id="resultimg" />')
-         let ri = document.getElementById("resultimg")
-         ri.style.border = "solid"
-      };
+      
        if(drawingCanvas && drawingCanvas.getContext) {
           var context = drawingCanvas.getContext('2d');
           var ctx = drawingCanvas.getContext('2d');
@@ -97,6 +91,14 @@ let ctrl = document.getElementById("controls")
                face_img.src = face_choose.value;
                ctx.drawImage(face_img,face_c.value,face_r.value,8,8,8,8,8,8);
             }
+            let download = document.getElementById("download") 
+            if(download.checked){
+               //var drawingCanvas = document.getElementById('canvas');
+               var result_img = drawingCanvas.toDataURL("image/png")
+               document.write('<img src="'+result_img+'" id="resultimg"/>')
+               var ri = document.getElementById('resultimg')
+               ri.style.border = 'solid'
             };
-         };
       };
+   };
+};
