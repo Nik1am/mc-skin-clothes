@@ -95,7 +95,7 @@ let ctrl = document.getElementById("controls")
             if(download.checked){
                //var drawingCanvas = document.getElementById('canvas');
                var result_img = drawingCanvas.toDataURL("image/png")
-               document.write('<img src="'+result_img+'" id="resultimg"/>sorry for blurry image >w<')
+               document.write('<img src="'+result_img+'" id="resultimg"/>sorry for blurry image QwQ')
                var ri = document.getElementById('resultimg')
                ri.style.border = 'solid'
                ri.style.width = '512px'
