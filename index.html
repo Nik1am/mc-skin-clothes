@@ -11,7 +11,7 @@
 
 
 
-<div id="controls" oninput="drawSkin()">
+<div id="controls" onchange="drawSkin()">
     <p>Controls opacity <input type="range" id="opacity" min="10" max="100" value="100"></p>
 
     <p>Skin tone: <input type="checkbox" id="st_checkbox"><select id="st_choose">
@@ -30,7 +30,8 @@
             <img src="faces_table.png" id="ft">
         <div>
     </p>
-
+    <p>If something don't work just drag this: <input type="range" value="Update preview" id="update"></p>
+    <p>Your skin<input type="file" id='uskin' accept="image/png"></p>
     <p>Hat<input type="checkbox" id="hat_checkbox"> Type: <select id="hat_choose">
         <option value="none.png">(nothing)</option>
         <option value="hat/NY_hat.png">New Year hat</option>
@@ -76,8 +77,7 @@
     
     <p>Convert to image<input type="checkbox" id="download" value="Download"></p>
     
-    <p>If something don't work just drag this: <input type="range" value="Update preview" id="update"></p>
-    <p>v04.01.21</p>
+    <p>v23.03.21</p>
 </div>
 <script src="script.js"></script>
 </body>
