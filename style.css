@@ -17,6 +17,7 @@ body{
     background-color:#FFF;
     transform-origin: top left;
     transform:scale(6);
+    image-rendering: crisp-edges;
 
     filter: none; 
     -webkit-filter: blur(0); 
